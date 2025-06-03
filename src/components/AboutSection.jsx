@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/AboutSection.css';
-import aboutImage from '../assets/about-image.webp'; 
+import aboutImage from '../assets/about.webp'; 
 
 const AboutSection = () => {
   return (
