@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../style/AboutSection.css';
-import aboutImage from '../assets/about-image.webp'; 
+import aboutImage from '../assets/about-image.webp';
 
 const AboutSection = () => {
+  const btnRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false); // re-trigger when leaving and re-entering
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (btnRef.current) {
+      observer.observe(btnRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="about-section">
       <div className="container">
@@ -11,19 +35,18 @@ const AboutSection = () => {
             <h3>About Our Platform</h3>
             <p>
               We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
+              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
+              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
+              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
             </p>
-            <div className="about-sub-columns">
-              <div>
-                <h4>What We Offer</h4>
-                <p>Custom web development services tailored to your needs.</p>
-              </div>
-            </div>
-            <div className="about-buttons">
-              <button className="btn-primary">Learn More</button>
-              <button className="btn-secondary">Get in Touch</button>
+            <div
+              ref={btnRef}
+              className={`about-buttons ${isVisible ? 'animate-buttons' : ''}`}
+            >
+              <a href="/about" className="learn-button">Contact Us</a>
             </div>
           </div>
-          <div className="about-image">
+          <div className="offers-image">
             <img src={aboutImage} alt="About Platform" />
           </div>
         </div>

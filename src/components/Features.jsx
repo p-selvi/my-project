@@ -6,19 +6,19 @@ const Features = () => {
     {
       id: 1,
       title: 'Fast Performance',
-      description: 'Experience lightning-fast load times.',
+      description: 'Easy to navigate and simple to use.',
       link: '#',
     },
     {
       id: 2,
       title: 'Responsive Design',
-      description: 'Looks great on any device.',
+      description: 'Easy to navigate and simple to use.',
       link: '#',
     },
     {
       id: 3,
       title: 'Secure Platform',
-      description: 'Your data is protected with top-tier security.',
+      description: 'Easy to navigate and simple to use.',
       link: '#',
     },
     {
@@ -31,18 +31,19 @@ const Features = () => {
 
   return (
     <section className="features-section">
-    <div className='container'>
-    <div className="features-grid">
-        {featureData.map((feature) => (
-          <div key={feature.id} className="feature-item">
-            <div className="feature-icon">🔵</div>
-            <h4>{feature.title}</h4>
-            <p>{feature.description}</p>
-            <a href={feature.link}>Learn More →</a>
-          </div>
-        ))}
+      <div className='container'>
+        <h3 className='title'>About Our Platform</h3>
+        <h4 className='subtitle'>Easy to navigate and simple to use</h4>
+        <div className="features-grid">
+          {featureData.map((feature) => (
+            <div key={feature.id} className="feature-item">
+              <div className="feature-icon">🔵</div>
+              <h4>{feature.title}</h4>
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

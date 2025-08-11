@@ -12,6 +12,10 @@
   flex-wrap: wrap;
 }
 
+.footer-logo a {
+  text-decoration: none;
+}
+
 .footer-logo h1 {
   margin: 0;
   color: #fff;

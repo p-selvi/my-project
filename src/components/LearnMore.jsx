@@ -5,36 +5,12 @@ const LearnMore = () => {
     return (
         <section className="learn-more">
             <div className="container">
-                
-                <div className="learn-columns">
-                    <div className="learn-column">
-                    <h3>Explore More About Us</h3>
-                        <p>
-                            Discover our mission and vision that drives innovation.
-                            We believe in building for impact.
-                            Join us in shaping a better future.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div className="learn-column">
-                    <h3>Explore More About Us</h3>
-                        <p>
-                            Meet our team of passionate professionals.
-                            Our strength lies in collaboration and growth.
-                            Get inspired by their stories.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div className="learn-column">
-                    <h3>Explore More About Us</h3>
-                        <p>
-                            Explore our services and solutions tailored for you.
-                            From consulting to implementation.
-                            Let’s take your goals to the next level.
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
+                <h2 className="learn-title">Explore More About Us</h2>
+                <p className="learn-subtitle">
+                    Discover our mission, vision, and the passionate people behind our success.
+                    Join us in shaping a better future together.
+                </p>
+                <a href="/contact" className="learn-button">Contact Us</a>
             </div>
         </section>
     );

@@ -13,6 +13,10 @@
   padding: 0 20px;
 }
 
+.navbar-logo a {
+  text-decoration: none;
+}
+
 .navbar-logo h1 {
   font-size: 24px;
   font-weight: bold;

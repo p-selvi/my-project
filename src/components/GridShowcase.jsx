@@ -1,5 +1,12 @@
-import React from 'react';
-import '../style/GridShowcase.css';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "../style/GridShowcase.css";
 
 const GridShowcase = () => {
   return (
@@ -7,14 +14,76 @@ const GridShowcase = () => {
       <div className="container">
         <h2>Our Features</h2>
 
-        <div className="two-column-layout">
-          <div className="column">
-            <p>This is the first paragraph under the first column. Here, you can describe the first feature or offer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem praesentium, accusamus quis adipisci magnam iusto ipsam odio itaque unde nemo iure, assumenda repudiandae, eaque similique quod laborum excepturi dolores omnis fuga nobis labore molestias corporis tenetur! Quo, nemo quae nam rem pariatur unde laudantium, accusantium placeat, veritatis doloremque nisi eaque?</p>
-          </div>
-          <div className="column">
-            <p>This is the second paragraph under the second column. Here, you can describe the second feature or offer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis temporibus, sunt doloremque cum pariatur consequuntur possimus non laborum? Eligendi perspiciatis consequuntur distinctio esse tenetur dignissimos labore minus numquam. Illo sed veniam fugit eaque maiores mollitia eveniet doloremque consequatur. Eligendi, quis natus laborum aut harum autem minima iusto unde laudantium quibusdam?</p>
-          </div>
-        </div>
+        <Swiper
+          modules={[Navigation,  Autoplay]}
+          spaceBetween={20}
+          slidesPerView={2}
+          autoplay={{
+            delay: 2500, 
+            disableOnInteraction: false, 
+          }}
+          loop={true}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 }
+          }}
+        >
+          <SwiperSlide>
+            <div className="column">
+              <p>
+                This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="column">
+              <p>
+                This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="column">
+              <p>
+                This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="column">
+              <p>
+                This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
+                can describe the second feature or offer. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );

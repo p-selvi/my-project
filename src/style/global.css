@@ -5,3 +5,7 @@
     width: 100%;
     box-sizing: border-box;
   }
+  .section-padding{
+    padding: 80px 20px;
+    background-color: #eceaf0;
+  }

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
+import InnerBanner from '../components/inner-banner';
 import Features from '../components/Features';
 import AboutSection from '../components/AboutSection';
 import OffersSection from '../components/OffersSection';
@@ -9,20 +9,18 @@ import Variations from '../components/Variations';
 import CallToAction from '../components/CallToAction';
 import LearnMore from '../components/LearnMore';
 
-const Home = () => {
+const About = () => {
   return (
     <>
-      <HeroSection />
+      <InnerBanner title="About" />
       <AboutSection />
       <Features />
       <OffersSection />
       <GridShowcase />
-      <InfoBlock />
-      <Variations />
       <CallToAction />
       <LearnMore />
     </>
   );
 };
 
-export default Home;
+export default About;
