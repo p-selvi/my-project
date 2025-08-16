@@ -87,3 +87,23 @@
     justify-content: center;
   }
 }
+.offers-list {
+  list-style: none; 
+  padding: 0;
+  margin: 20px 0;
+}
+
+.offers-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.list-icon {
+  color: #4f46e5; 
+  margin-right: 10px;
+  flex-shrink: 0; 
+  font-size: 1.1rem;
+}

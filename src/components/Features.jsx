@@ -5,39 +5,41 @@ const Features = () => {
   const featureData = [
     {
       id: 1,
-      title: 'Fast Performance',
-      description: 'Easy to navigate and simple to use.',
-      link: '#',
+      title: 'Quick Learning',
+      description: 'Bite-sized lessons to help you learn faster.',
+      icon: '/images/quick-learning.png', 
     },
     {
       id: 2,
-      title: 'Responsive Design',
-      description: 'Easy to navigate and simple to use.',
-      link: '#',
+      title: 'Responsive Access',
+      description: 'Study on mobile, tablet, or desktop.',
+      icon: '/images/responsive.png',       
     },
     {
       id: 3,
-      title: 'Secure Platform',
-      description: 'Easy to navigate and simple to use.',
-      link: '#',
+      title: 'Safe & Reliable',
+      description: 'A secure platform built for students.',
+      icon: '/images/safe.png',           
     },
     {
       id: 4,
-      title: 'User Friendly',
-      description: 'Easy to navigate and simple to use.',
-      link: '#',
+      title: 'Beginner Friendly',
+      description: 'Easy navigation and structured content.',
+      icon: '/images/beginner.png',   
     },
   ];
 
   return (
     <section className="features-section">
       <div className='container'>
-        <h3 className='title'>About Our Platform</h3>
-        <h4 className='subtitle'>Easy to navigate and simple to use</h4>
+        <h3 className='title'>Why Choose SkillUp?</h3>
+        <h4 className='subtitle'>Easy to use and made for learners</h4>
         <div className="features-grid">
           {featureData.map((feature) => (
             <div key={feature.id} className="feature-item">
-              <div className="feature-icon">🔵</div>
+              <div className="feature-icon">
+                <img src={feature.icon} alt={feature.title} />
+              </div>
               <h4>{feature.title}</h4>
               <p>{feature.description}</p>
             </div>

@@ -1,39 +1,39 @@
 import React from 'react';
 import '../style/Variations.css';
 import aboutImage from '../assets/about-image.webp';
+import { FaCheckCircle } from 'react-icons/fa';
 
 const Variations = () => {
   return (
     <section className="variations-section">
-      <div className='container variations-container'>
+      <div className="container variations-container">
 
-        {/* Right Side Content */}
         <div className="variations-content">
-          <h3>Main Heading for Variations Section</h3>
-          <h4>Section Title</h4>
-          <p>
-            This is the first line of the paragraph.
-            Here is the second line for more detail.
-            The third line gives additional context.
-            And the fourth line completes the thought. This is the first line of the paragraph.
-            Here is the second line for more detail.
-            The third line gives additional context.
-            And the fourth line completes the thought. This is the first line of the paragraph.
-            Here is the second line for more detail. Here is the second line for more detail.
-            The third line gives additional context.
-            And the fourth line completes the thought.
-            The third line gives additional context.
-            And the fourth line completes the thought.
-          </p>
+          <h3>Why Learning with SkillUp Works</h3>
+          <h4>Make Your Move Today</h4>
+          <ul className="variations-list">
+            <li>
+              <FaCheckCircle className="list-icon" />
+              Start Learning Now → Access free and premium courses.
+            </li>
+            <li>
+              <FaCheckCircle className="list-icon" />
+              Track Your Progress → Monitor your learning with progress tools.
+            </li>
+            <li>
+              <FaCheckCircle className="list-icon" />
+              Get Certified → Receive certificates to showcase your achievements.
+            </li>
+          </ul>
           <div className="variations-actions">
-            <a href="/about" className="learn-button">Contact Us</a>
+            <a href="/about" className="learn-button">Join Now</a>
           </div>
         </div>
 
         <div className="variations-image">
           <img src={aboutImage} alt="About Platform" />
         </div>
-
+        
       </div>
     </section>
   );

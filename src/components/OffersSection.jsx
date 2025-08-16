@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/OffersSection.css';
 import aboutImage from '../assets/about-image.webp'; 
+import { FaCheckCircle } from 'react-icons/fa'; // ✅ icon import
 
 const OffersSection = () => {
   return (
@@ -14,19 +15,20 @@ const OffersSection = () => {
 
         {/* Right side content */}
         <div className="offers-text">
-          <h2>Special Offers Just For You</h2>
+          <h2>Explore Popular Learning Paths</h2>
           <p>
-            Take advantage of these exclusive offers available for a limited time. Don&apos;t miss out!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae eveniet,
-            consequuntur eaque soluta suscipit consectetur?Take advantage of these exclusive offers available for a limited time. 
+            Choose from our most popular categories to begin your journey. Whether you’re just starting out or enhancing your skills, SkillUp has a course for you.
           </p>
-          <p>
-            Take advantage of these exclusive offers available for a limited time. Don&apos;t miss out!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae eveniet,
-            consequuntur eaque soluta suscipit consectetur?Take advantage of these exclusive offers available for a limited time.
-          </p>
+
+          {/* List instead of plain paragraphs */}
+          <ul className="offers-list">
+            <li><FaCheckCircle className="list-icon" /> Coding Basics → Build a strong foundation in programming.</li>
+            <li><FaCheckCircle className="list-icon" /> Web Development → Learn to design and build websites.</li>
+            <li><FaCheckCircle className="list-icon" /> Digital Marketing → Discover strategies to grow businesses online.</li>
+          </ul>
+
           <div className="offers-links">
-            <a href="/contact" className="offer-link">Free Trial</a>
+            <a href="/contact" className="offer-link">Try SkillUp Free</a>
           </div>
         </div>
 

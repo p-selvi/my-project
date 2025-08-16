@@ -31,13 +31,7 @@ const GridShowcase = () => {
           <SwiperSlide>
             <div className="column">
               <p>
-                This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
+                SkillUp makes learning simple with bite-sized lessons that help you progress faster. Each module is focus on one concept, avoiding long and overwhelming sessions. With clear step-by-step explanations, our content is designed for busy learners who want to save time while still building strong knowledge.
               </p>
             </div>
           </SwiperSlide>
@@ -45,13 +39,7 @@ const GridShowcase = () => {
           <SwiperSlide>
             <div className="column">
               <p>
-                This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
+                Learn anytime, anywhere with a fully responsive platform. Whether you’re on a laptop, tablet, or phone, SkillUp ensures a smooth and mobile-friendly experience. You can continue where you left off across devices, with simple navigation and consistent performance. One platform, all devices, seamless learning.
               </p>
             </div>
           </SwiperSlide>
@@ -59,13 +47,7 @@ const GridShowcase = () => {
           <SwiperSlide>
             <div className="column">
               <p>
-                This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
+                Your learning journey is secure with SkillUp. Our platform is built with strong privacy protection and reliable performance, ensuring your data stays safe at all times. With tested stability and speed, you never risk losing progress, giving you complete confidence while focusing on your studies.
               </p>
             </div>
           </SwiperSlide>
@@ -73,13 +55,7 @@ const GridShowcase = () => {
           <SwiperSlide>
             <div className="column">
               <p>
-                This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. This is the second paragraph under the second column. Here, you
-                can describe the second feature or offer. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit.
+                SkillUp is designed for absolute beginners. With a simple interface, step-by-step learning, and plenty of visual examples, you can start without prior experience. The content is structured to track progress clearly and remove confusion, helping you begin small and gradually grow stronger in your skills.
               </p>
             </div>
           </SwiperSlide>

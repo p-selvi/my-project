@@ -13,7 +13,7 @@ const AboutSection = () => {
           if (entry.isIntersecting) {
             setIsVisible(true);
           } else {
-            setIsVisible(false); // re-trigger when leaving and re-entering
+            setIsVisible(false); 
           }
         });
       },
@@ -32,18 +32,18 @@ const AboutSection = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-text">
-            <h3>About Our Platform</h3>
+            <h3>About SkillUp</h3>
             <p>
-              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
-              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
-              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
-              We provide efficient, scalable web solutions for startups and businesses. Our mission is to simplify development.
+              SkillUp is an online learning hub created to make education simple and accessible for everyone. Whether you are a student, a professional, or someone curious to learn new things, our platform provides high-quality tutorials across coding, design, marketing, and more.
+            </p>
+            <p>
+              We believe learning should be flexible, engaging, and practical. That’s why our courses are built in short, structured modules that fit into your daily routine. With SkillUp, you can start small, progress at your own pace, and achieve big goals over time.
             </p>
             <div
               ref={btnRef}
               className={`about-buttons ${isVisible ? 'animate-buttons' : ''}`}
             >
-              <a href="/about" className="learn-button">Contact Us</a>
+              <a href="/about" className="learn-button">Start Learning</a>
             </div>
           </div>
           <div className="offers-image">

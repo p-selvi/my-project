@@ -57,7 +57,7 @@ const Contact = () => {
           <div className="col-12 mb-4">
             <h2 className="mb-3 fw-bold">Contact Us</h2>
             <p className="text-muted">
-              Feel free to use the form or drop us an email. Old-fashioned phone calls work too.
+              Feel free to use the form or drop us an email.
             </p>
             <ul className="list-unstyled mt-4">
               <li className="d-flex align-items-center mb-3 text-secondary">
@@ -106,7 +106,7 @@ const Contact = () => {
                 <input
                   type="email"
                   className="form-control"
-                  placeholder="example@email.com"
+                  placeholder="example@gmail.com"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}

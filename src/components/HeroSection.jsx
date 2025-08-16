@@ -34,9 +34,9 @@ const HeroSection = () => {
         >
           <h1>
             <span>Welcome to</span><br />
-            <span>My Website</span>
+            <span>SkillUp</span>
           </h1>
-          <p>Your gateway to modern web experiences.</p>
+          <p>Learn new skills anytime, anywhere.</p>
           <a href="/about">
             <button>Get Started</button>
           </a>
